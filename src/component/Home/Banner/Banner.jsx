@@ -1,7 +1,8 @@
 // import 'animate.css';
 import { useState } from 'react';
-import { FaDownload } from 'react-icons/fa';
 import { ImProfile } from 'react-icons/im';
+import { MdOutlineWhatsapp } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 
 
@@ -40,24 +41,13 @@ const Banner = () => {
     return (
 
         <div className="mx-auto container relative">
- 
-            {/* Blur Image: Move to End */}
-            {/* <div className="absolute top-0 right-10">
-                <img
-                    src="https://i.postimg.cc/yY7Bb1YT/blur-1.png"
-                    alt=""
-                    className=" "
-                />
-            </div> */}
-
- 
 
             <div className="flex flex-col-reverse lg:flex-row justify-center items-center lg:gap-60 mt-28 lg:mt-52">
                 {/* Left Side Text */}
                 <div className="z-10 relative text-left p-4 lg:p-0 mt-4 lg:mt-10 md:mt-8">
                     <h1 className="text-2xl md:text-3xl lg:text-xl xl:text-3xl font-bold text-black mb-4">Hi There!</h1>
                     <h1 className="text-3xl md:text-4xl lg:text-2xl xl:text-5xl font-bold text-black mb-4">
-                        I&lsquo;m <span className="text-[#5271FF]">Rashedul Haque</span>
+                        I&lsquo;m <span className="text-blue-500">Rashedul Haque</span>
                     </h1>
                     <div className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-black mb-4">
                         <Typewriter
@@ -71,9 +61,11 @@ const Banner = () => {
                         />
                     </div>
                     <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-10 justify-center lg:justify-start">
-                        <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
-                            Download CV <FaDownload className="ml-2" />
-                        </button>
+                        <Link to={'https://api.whatsapp.com/send/?phone=8801772582460'}>
+                            <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
+                                Contact   <MdOutlineWhatsapp className="ml-2 text-2xl text-black  " />
+                            </button>
+                        </Link>
                         <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
                             View Resume <ImProfile className="ml-2" />
                         </button>

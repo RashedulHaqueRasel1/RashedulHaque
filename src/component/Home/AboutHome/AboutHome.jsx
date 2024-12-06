@@ -7,13 +7,14 @@ import laptopWorking from "../../../assets/laptopWorking.json"
 
 const AboutHome = () => {
     return (
-        <div className=" mt-24 bg-blue-200 h-[850px] lg:h-[630px]">
+        <div className=" mt-24 bg-[#D7F2F9] h-[850px] lg:h-[630px]">
 
 
 
             <div className="  ">
 
                 <div className="mx-auto container">
+
                     <div className="relative flex justify-center">
                         {/* Background Text */}
                         <h1 className="absolute inset-0 flex justify-center mt-10  text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-blue-500 opacity-15">
@@ -26,7 +27,7 @@ const AboutHome = () => {
                                 Know Me More
                             </h2>
                             <div className="flex justify-center mt-2">
-                                <div className="w-12 sm:w-16 md:w-20 lg:w-28 h-1 bg-primary"></div>
+                                <div className="w-16 sm:w-20 md:w-24 lg:w-32 h-1 bg-blue-500"></div>
                             </div>
                         </div>
                     </div>
@@ -61,15 +62,15 @@ const AboutHome = () => {
                                 {/* Social Links */}
                                 <div className="mt-4">
                                     <div className="flex space-x-6">
-                                        <NavLink to={'https://www.linkedin.com/in/rashedul-haque-rasel1/'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer">
+                                        <NavLink to={'https://www.linkedin.com/in/rashedul-haque-rasel1/'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer  hover:scale-105 duration-500">
                                             <RiLinkedinFill className="text-xl" />
                                         </NavLink>
 
-                                        <NavLink to={'https://github.com/RashedulHaqueRasel1'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer">
+                                        <NavLink to={'https://github.com/RashedulHaqueRasel1'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer  hover:scale-105 duration-500">
                                             <BsGithub className="text-xl" />
                                         </NavLink>
 
-                                        <NavLink to={'https://www.facebook.com/Rashedul.haque.Rase1'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer">
+                                        <NavLink to={'https://www.facebook.com/Rashedul.haque.Rase1'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer  hover:scale-105 duration-500">
                                             <FaFacebookF className="text-xl" />
                                         </NavLink>
                                     </div>

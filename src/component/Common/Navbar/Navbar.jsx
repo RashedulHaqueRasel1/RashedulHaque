@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaLaptopCode } from "react-icons/fa";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { ImCancelCircle } from "react-icons/im";
-import { NavLink } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(true);
     const [isScrolled, setIsScrolled] = useState(false);
+
+    const location = useLocation();
+    
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -68,11 +71,8 @@ const Navbar = () => {
                 <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto mt-6 lg:mt-0">
 
                     <a href="/" className="flex items-center px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4">
-                        <img
-                            src="https://www.svgrepo.com/show/499962/music.svg"
-                            className="h-6 mr-3 sm:h-9"
-                            alt="Landwind Logo"
-                        />
+                        <FaLaptopCode className="text-4xl mr-2 "/>
+                        
                         <span className="self-center text-xl font-semibold whitespace-nowrap ">
                             Rashedul
                         </span>

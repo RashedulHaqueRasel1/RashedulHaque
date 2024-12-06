@@ -1,10 +1,11 @@
-// import Banner from "../Banner/Banner";
 import Footer from "../Common/Footer/Footer";
 import Navbar from "../Common/Navbar/Navbar";
 import AboutHome from "./AboutHome/AboutHome";
 import Banner from "./Banner/Banner";
+import ContactHome from "./ContactHome/ContactHome";
 import MarqueeSlide from "./MarqueeSlide/MarqueeSlide";
 import ProjectHome from "./ProjectHome/ProjectHome";
+import SkillHome from "./SkillHome/SkillHome";
 
 const Home = () => {
 
@@ -29,12 +30,15 @@ const Home = () => {
 
             <AboutHome></AboutHome>
 
+            <SkillHome></SkillHome>
+
 
             <ProjectHome></ProjectHome>
+            
+            <ContactHome></ContactHome>
 
 
-
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
 
 
         </div>
