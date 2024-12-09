@@ -1,5 +1,4 @@
-import Footer from "../Common/Footer/Footer";
-import Navbar from "../Common/Navbar/Navbar";
+ 
 import AboutHome from "./AboutHome/AboutHome";
 import Banner from "./Banner/Banner";
 import ContactHome from "./ContactHome/ContactHome";
@@ -11,9 +10,7 @@ const Home = () => {
 
     return (
         <div>
-
-            {/* Home */}
-            <Navbar></Navbar>
+ 
 
             {/* Blur Image: Move to End */}
             <div className="absolute top-0 right-10">
@@ -38,7 +35,7 @@ const Home = () => {
             <ContactHome></ContactHome>
 
 
-            <Footer></Footer>
+ 
 
 
         </div>

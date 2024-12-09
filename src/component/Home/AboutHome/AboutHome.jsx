@@ -84,7 +84,7 @@ const AboutHome = () => {
 
                     <div className=" ">
                         {/* About More Button */}
-                        <Link to={''} className="relative flex justify-center">
+                        <Link to={'/about'} className="relative flex justify-center">
                             <button className="absolute px-4 py-3 md:px-6 md:py-3 lg:px-8 lg:py-3 mt-3 lg:mt-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
                                 About More ...
                             </button>

@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { FaDownload, FaLaptopCode } from "react-icons/fa";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { ImCancelCircle } from "react-icons/im";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(true);
     const [isScrolled, setIsScrolled] = useState(false);
 
-    const location = useLocation();
+    // const location = useLocation();
     
 
     const toggleMenu = () => {
@@ -80,7 +80,7 @@ const Navbar = () => {
 
 
                     <div className="flex items-center lg:order-2">
-                        <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
+                        <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border   border-2 text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
                             Download CV <FaDownload className='ml-2' />
                         </button>
 

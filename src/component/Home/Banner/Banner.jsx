@@ -21,8 +21,8 @@ const Banner = () => {
         const height = target.clientHeight;
 
         // Calculate the rotation values based on mouse position
-        const rotateY = ((offsetX - width / 2) / width) * 30; // Adjust Y rotation (horizontal axis)
-        const rotateX = ((height / 2 - offsetY) / height) * 30; // Adjust X rotation (vertical axis)
+        const rotateY = ((offsetX - width / 2) / width) * 30;
+        const rotateX = ((height / 2 - offsetY) / height) * 30;
 
         // Update the style with dynamic transform
         setStyle({
@@ -61,14 +61,16 @@ const Banner = () => {
                         />
                     </div>
                     <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-10 justify-center lg:justify-start">
-                        <Link to={'https://api.whatsapp.com/send/?phone=8801772582460'}>
+                        <Link to={'https://api.whatsapp.com/send/?phone=8801772582460'} className=''>
                             <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
                                 Contact   <MdOutlineWhatsapp className="ml-2 text-2xl text-black  " />
                             </button>
                         </Link>
-                        <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
-                            View Resume <ImProfile className="ml-2" />
-                        </button>
+                        <Link to={'https://api.whatsapp.com/send/?phone=8801772582460'}>
+                            <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
+                                View Resume <ImProfile className="ml-2" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
