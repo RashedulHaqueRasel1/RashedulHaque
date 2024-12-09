@@ -1,5 +1,5 @@
 import { BsGithub } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import Lottie from "lottie-react";
@@ -66,13 +66,14 @@ const AboutHome = () => {
                                             <RiLinkedinFill className="text-xl" />
                                         </NavLink>
 
+                                        <NavLink to={'https://api.whatsapp.com/send/?phone=8801772582460'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer  hover:scale-105 duration-500">
+                                             <FaWhatsapp className="text-2xl" />
+                                        </NavLink>
+
                                         <NavLink to={'https://github.com/RashedulHaqueRasel1'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer  hover:scale-105 duration-500">
                                             <BsGithub className="text-xl" />
                                         </NavLink>
 
-                                        <NavLink to={'https://www.facebook.com/Rashedul.haque.Rase1'} className="inline-flex items-center justify-center p-2    text-base font-bold leading-6 text-primary  border-transparent rounded-full md:w-auto outline outline-offset-2 outline-1  hover:bg-blue-500   hover:text-white   focus:ring-offset-2 focus:ring-indigo-600 cursor-pointer  hover:scale-105 duration-500">
-                                            <FaFacebookF className="text-xl" />
-                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
