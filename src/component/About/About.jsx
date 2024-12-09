@@ -46,7 +46,7 @@ const About = () => {
 
                     <div className="text-black w-full lg:w-3/5 ml-0 lg:ml-10 lg:mt-24 ">
                         <h1 className="text-2xl lg:text-4xl font-bold mb-4 ">
-                            I'm <span className="text-blue-500 text-opacity-80">Rashedul Haque Rasel</span> a Web Developer,
+                            I&#39;m <span className="text-blue-500 text-opacity-80">Rashedul Haque Rasel</span> a Web Developer,
                         </h1>
                         <p className="text-black text-opacity-65 text-lg lg:text-xl h-full">
                             I am a dedicated web developer with expertise in both front-end and back-end technologies. My aim is to create innovative, user-friendly applications, enhance user experiences, and drive business growth while aspiring to lead and continuously learn in a dynamic environment.

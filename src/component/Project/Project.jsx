@@ -114,8 +114,9 @@ const Project = () => {
 
 
     return (
-        <div className="bg-[#D7F2F9]  mt-20 h-full  bg-cover bg-center  ">
-            <div>
+        <div className=" relative  mt-20 h-full  bg-cover bg-center  ">
+ 
+            <div className=" ">
                 <div className="relative flex justify-center">
                     {/* Background Text */}
                     <h1 className="absolute inset-0 flex justify-center mt-10 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gray-700 opacity-10">
@@ -135,8 +136,8 @@ const Project = () => {
                 {/* Project Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 mt-8 mx-auto container ">
                     {projects.map((project, index) => (
-                        <div key={index} className="p-4">
-                            <div className="border border-black p-2 rounded-lg bg-white">
+                        <div key={index} className="p-4 ">
+                            <div className="border border-black p-2 rounded-lg   hover:bg-blue-200">
                                 <div className="relative overflow-hidden group cursor-pointer">
                                     {/* Image */}
                                     <img
@@ -150,7 +151,7 @@ const Project = () => {
                                     {project.technologies.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="border border-black p-2 text-black rounded-xl hover:bg-blue-500"
+                                            className="border border-black p-2 text-black rounded-xl hover:bg-white"
                                         >
                                             {tech}
                                         </span>
@@ -168,13 +169,13 @@ const Project = () => {
 
                                 <div className="flex justify-around my-3">
                                     <button
-                                        className="px-4 py-2 md:px-6 md:py-3 lg:px-5 lg:py-3 hover:border border border-black text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black transition duration-1000 ease-in-out flex justify-center items-center"
+                                        className="px-4 py-2 md:px-6 md:py-3 lg:px-5 lg:py-3 hover:border border border-black text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-white text-black transition duration-1000 ease-in-out flex justify-center items-center"
                                         onClick={() => openModal(project)}
                                     >
                                         Demo
                                     </button>
                                     <button
-                                        className="px-4 py-2 md:px-6 md:py-3 lg:px-5 lg:py-3 hover:border border border-black text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black transition duration-1000 ease-in-out flex justify-center items-center"
+                                        className="px-4 py-2 md:px-6 md:py-3 lg:px-5 lg:py-3 hover:border border border-black text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-white text-black transition duration-1000 ease-in-out flex justify-center items-center"
                                         onClick={() => openModalGit(project)}
                                     >
                                         GitHub
@@ -263,7 +264,7 @@ const Project = () => {
                         </div>
                     </div>
                 )}
- 
+
             </div>
 
 
