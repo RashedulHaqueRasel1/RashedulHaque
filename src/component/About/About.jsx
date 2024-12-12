@@ -9,7 +9,7 @@ const About = () => {
 
 
     return (
-        <div className="container mx-auto lg:my-28 my-10 relative">
+        <div className="container mx-auto lg:my-28 my-10 relative ">
 
             {/* Blur Image: Move to End */}
             <div className="absolute">
@@ -20,10 +20,10 @@ const About = () => {
                 />
             </div>
 
-            <div className=" lg:mb-8 relative p-6 lg:p-3">
+            <div className=" lg:mb-8 relative p-6 lg:p-3 ">
 
 
-                <div className="relative flex justify-center mt-16">
+                <div className="relative flex justify-center mt-14">
                     {/* Background Text */}
                     <h1 className="absolute inset-0 flex justify-center mt-10  text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-blue-500 opacity-15">
                         ABOUT ME

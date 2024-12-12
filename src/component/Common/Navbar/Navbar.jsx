@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaDownload, FaLaptopCode } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { ImCancelCircle } from "react-icons/im";
 import { NavLink} from "react-router-dom";
@@ -63,24 +63,23 @@ const Navbar = () => {
         <div>
             <nav
                 className={`fixed top-0 left-0 w-full   lg:py-4 z-40 transition-colors duration-300 ${isScrolled
-                    ? "backdrop-blur-lg   shadow-md"
+                    ? "backdrop-blur-lg  shadow-md"
                     : "bg-transparent"
                     }`}
             >
 
-                <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto mt-6 lg:mt-0">
+                <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto   lg:mt-0">
 
-                    <a href="/" className="flex items-center px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4">
-                        <FaLaptopCode className="text-4xl mr-2 "/>
-                        
-                        <span className="self-center text-xl font-semibold whitespace-nowrap ">
-                            Rashedul
-                        </span>
+                    <a href="/" className=" ">
+                        {/* <FaLaptopCode className="text-4xl mr-2 "/> */}
+
+                        <img src={"https://i.postimg.cc/0yxrSfpR/Rasel-Logo.png"} alt="" className="w-full h-20 "/>
+ 
                     </a>
 
 
                     <div className="flex items-center lg:order-2">
-                        <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border   border-2 text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
+                        <button className="px-4 py-2 md:px-6 md:py-3 lg:px-6 lg:py-3 hover:border   border-2 text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
                             Download CV <FaDownload className='ml-2' />
                         </button>
 
@@ -106,14 +105,14 @@ const Navbar = () => {
                         className={`${isMenuOpen
                             ? "max-h-screen translate-y-0 opacity-100"
                             : "max-h-0 -translate-y-full opacity-0"
-                            } overflow-hidden transition-all duration-1000 ease-in-out items-center justify-between w-full h-96 lg:h-10 lg:flex lg:w-auto lg:order-1 bg-blue-200 rounded-lg lg:bg-transparent mt-4 py-4`}
+                            } overflow-hidden transition-all duration-1000 ease-in-out items-center justify-between w-full h-96 lg:h-10 lg:flex lg:w-auto lg:order-1 bg-blue-200 rounded-lg lg:bg-transparent `}
                     >
                         <div className="flex items-center justify-center">
                             <ul className="flex flex-col   font-medium lg:flex-row lg:space-x-8 lg:mt-0">
 
                                 {
                                     navLink.map(nav => (
-                                        <li className="py-4 font-semibold hover:text-blue-600 hover:underline duration-500 text-2xl" key={nav.path}><NavLink to={nav.path}>{nav.title}</NavLink></li>
+                                        <li className=" font-semibold hover:text-blue-600 hover:underline duration-500 text-2xl" key={nav.path}><NavLink to={nav.path}>{nav.title}</NavLink></li>
                                     ))
                                 }
 

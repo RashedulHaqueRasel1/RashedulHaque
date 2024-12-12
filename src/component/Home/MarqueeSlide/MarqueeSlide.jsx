@@ -39,6 +39,10 @@ const MarqueeSlide = () => {
                     ))}
                 </div>
             </Marquee>
+
+            <div>
+                test
+            </div>
         </div>
     );
 };
