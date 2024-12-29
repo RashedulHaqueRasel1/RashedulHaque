@@ -1,6 +1,6 @@
 // import 'animate.css';
 import { useState } from 'react';
-import { ImProfile } from 'react-icons/im';
+import { IoEyeOutline } from 'react-icons/io5';
 import { MdOutlineWhatsapp } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
@@ -52,7 +52,7 @@ const Banner = () => {
                     <div className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-black mb-4">
                         <Typewriter
                             options={{
-                                strings: ['Front End Web Developer', 'MERN Stack Developer'],
+                                strings: ['Front End Web Developer', 'MERN Stack Developer', 'Web Developer'],
                                 autoStart: true,
                                 loop: true,
                                 deleteSpeed: 50,
@@ -60,15 +60,15 @@ const Banner = () => {
                             }}
                         />
                     </div>
-                    <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-10 justify-center lg:justify-start">
+                    <div className="flex  flex-row gap-4 mt-6 lg:mt-10 justify-center lg:justify-start">
                         <Link to={'https://api.whatsapp.com/send/?phone=8801772582460'} className=''>
-                            <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
-                                Contact   <MdOutlineWhatsapp className="ml-2 text-2xl text-black  " />
+                            <button className="px-4 py-2 md:px-6 md:py-3 lg:px-6 lg:py-3 hover:border-2 border-2 text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg bg-blue-500 hover:bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
+                                Contact On  <MdOutlineWhatsapp className="ml-2 text-2xl text-black" />
                             </button>
                         </Link>
-                        <Link to={'https://api.whatsapp.com/send/?phone=8801772582460'}>
-                            <button className="px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 hover:border border text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
-                                View Resume <ImProfile className="ml-2" />
+                        <Link to={'/project'}>
+                            <button className="px-4 py-2 md:px-6 md:py-3 lg:px-6 lg:py-3  hover:border-2 border-2 text-[12px] md:text-[14px] lg:text-[16px] font-bold rounded-lg hover:bg-blue-500 bg-transparent text-black hover:text-black transition duration-1000 ease-in-out flex justify-center items-center">
+                                View Project <IoEyeOutline className="ml-2 text-xl text-black" />
                             </button>
                         </Link>
                     </div>
