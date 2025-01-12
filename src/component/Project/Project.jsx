@@ -47,6 +47,36 @@ const projects = [
     }
     ,
     {
+        title: "Short Caption",
+        description:
+            "Short Caption is a platform where users can explore and discover Bangla short captions that perfectly express their thoughts and emotions..",
+        technologies: ["React JS", "Node.js", "Express.js", "MongoDB"],
+        image: "https://i.postimg.cc/g2yC3WZR/image.png",
+        liveLink: "https://short-caption.vercel.app/",
+        clientCode: "https://github.com/RashedulHaqueRasel1/Short-Caption",
+        serverCode: "https://github.com/RashedulHaqueRasel1/Short-Caption-Server",
+        credentials: [
+            { role: "N/A", email: "N/A", password: "N/A" },
+            // { role: "Premium Member", email: "premium@gmail.com", password: "Premium@1" },
+        ],
+    }
+    ,
+    {
+        title: "Bangla Logic",
+        description:
+            "Bangla Logic offers expert App, Web, and Graphic Design services. It features a blog section managed by the admin, offering the latest industry insights.",
+        technologies: ["React JS", "Node.js", "Express.js", "MongoDB"],
+        image: "https://i.postimg.cc/TYd7BDLy/image.png",
+        liveLink: "https://bangla-logic.vercel.app/",
+        clientCode: "https://github.com/RashedulHaqueRasel1/BanglaLogic",
+        serverCode: "https://github.com/RashedulHaqueRasel1/BanglaLogic-Backend",
+        credentials: [
+            { role: "N/A", email: "N/A", password: "N/A" },
+            // { role: "Premium Member", email: "premium@gmail.com", password: "Premium@1" },
+        ],
+    }
+    ,
+    {
         title: "Asia Adventure",
         description:
             "Southeast Asia Tourism Management focuses on sustainable growth, strategic planning, and preserving cultural and natural heritage for future generations.",
